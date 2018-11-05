@@ -1,40 +1,49 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import React, { Component } from "react";
+import { Link } from "gatsby";
 
-const Navbar = () => (
-  <nav className="navbar is-transparent">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-          </figure>
-        </Link>
-      </div>
-      <div className="navbar-start">
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
-        <Link className="navbar-item" to="/products">
-          Products
-        </Link>
-      </div>
-      <div className="navbar-end">
-        <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img src={github} alt="Github" />
+class Navbar extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false,
+    }
+  }
+  render() {
+    return (
+      <nav className="navbar is-dark">
+        <div className="container">
+          <div className="navbar-brand">
+            <a className="navbar-item" href="../">
+              <h1>Emadekasvatus.ee</h1>
+            </a>
+            <span className={`navbar-burger burger ${this.state.open ? "is-active" : ""}`}
+                  data-target="navbarMenu"
+                  onClick={() => {
+              this.setState({ open: !this.state.open });
+            }}>
+                <span></span>
+                <span></span>
+                <span></span>
           </span>
-        </a>
-      </div>
-    </div>
-  </nav>
-)
+          </div>
+          <div id="navbarMenu" className={`navbar-menu ${this.state.open ? "is-active" : ""}`}>
+            <div className="navbar-end">
+              <Link className="navbar-item" to="/">
+                Avaleht
+              </Link>
+              <Link className="navbar-item" to="/about">
+                Ajalugu
+              </Link>
+              <Link className="navbar-item" to="/products">
+                Kontakt
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+    );
+  }
+}
 
-export default Navbar
+export default Navbar;

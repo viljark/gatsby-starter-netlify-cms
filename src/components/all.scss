@@ -1,0 +1,48 @@
+@import "~bulma/sass/utilities/initial-variables";
+
+// Config vars
+$theme-yellow: #fd9d32;
+$kaldi-red-invert: #fff;
+
+$primary: $theme-yellow;
+$primary-invert: $kaldi-red-invert;
+@import "~bulma";
+
+.hero {
+  position: relative;
+  + .container {
+    @media(min-width: 768px) {
+      margin-top: -3em;
+    }
+  }
+}
+.hero-body {
+  > .container {
+    z-index: 1;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0; left: 0; right: 0;
+    background: url("../img/DSC_0180.jpg") no-repeat, linear-gradient(141deg, rgba(255, 175, 36, 0.51) 0%, rgba(255, 221, 87, 0.51) 71%, rgba(255, 250, 112, 0.5) 100%);
+    background-size: cover;
+    filter: blur(2px);
+    background-blend-mode: multiply;
+  }
+}
+
+.navbar {
+  //background: linear-gradient(90deg, rgba(253, 157, 50, 0.85) 0%, rgba(253, 157, 50, 0.81) 100%);
+  //background-color: transparent !important;
+}
+
+.inline-image {
+  width: 25%;
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+html, body{
+  background-color: #fafafa;
+}

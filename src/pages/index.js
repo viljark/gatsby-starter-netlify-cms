@@ -1,79 +1,65 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
+import Layout from "../components/Layout";
+import Footer from "../components/Footer";
+import { HTMLContent } from "../components/Content";
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { data } = this.props;
+    console.log(data);
 
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+        <section className="hero is-medium is-bold">
+          <div className="hero-body">
+            <div className="container has-text-centered">
+              <h1 className="title has-text-white">
+                {data.markdownRemark.frontmatter.hero}
+              </h1>
             </div>
-            {posts
-              .map(({ node: post }) => (
-                <div
-                  className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                  key={post.id}
-                >
-                  <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
-                </div>
-              ))}
           </div>
         </section>
+        <div className="container">
+          <div className="card article">
+            <div className="card-content">
+              <div className="content article-body is-clearfix">
+                <Img className="inline-image" fluid={data.imageOne.childImageSharp.fluid}/>
+                <HTMLContent content={data.markdownRemark.html} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <Footer/>
       </Layout>
-    )
+    );
   }
 }
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
+      edges: PropTypes.array
+    })
+  })
+};
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          fields {
-            slug
+    imageOne: file(relativePath: {eq: "DSC_0129.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1000, maxHeight: 1000, cropFocus: CENTER) {
+            ...GatsbyImageSharpFluid
           }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-          }
-        }
+      }
+    }
+    markdownRemark(frontmatter: {templateKey: { eq: "index-page" }}) {
+      html
+      frontmatter {
+        hero
       }
     }
   }
-`
+`;
