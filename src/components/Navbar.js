@@ -32,8 +32,8 @@ class Navbar extends Component {
               <Link className="navbar-item" to="/">
                 Avaleht
               </Link>
-              <Link className="navbar-item" to="/about">
-                Ajalugu
+              <Link className="navbar-item" to="/galerii">
+                Galerii
               </Link>
               <Link className="navbar-item" to="/products">
                 Kontakt

@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
+#  name: git-gateway
+  name: 'test-repo'
   branch: master
-  #name: 'test-repo'
 media_folder: static/img
 public_folder: /img
 
@@ -15,14 +15,27 @@ collections:
         fields:
         - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
         - {label: "Suur tekst", name: "hero", widget: "string"}
+        - {label: "Tellimisvormi pealkiri", name: "formTitle", widget: "string"}
+        - {label: "Tellimisvormi kirjeldus", name: "formDescription", widget: "string"}
+        - {label: "Kas vorm on aktiivne?", name: "isFormActive", widget: "boolean"}
+        - {label: "Mitteaktiivse vormi asemel tekst", name: "notActiveDescription", widget: "string"}
+        - label: "Avalehe pilt 1"
+          name: "picture1"
+          widget: image
+          options:
+            media_library:
+              name: uploadcare
+              config:
+                publicKey: ce04f8bba046c52fb31b
+                imageShrink: 640x480 85%
         - {label: "Sisu", name: "body", widget: "markdown"}
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: "src/pages/galerii/index.md"
+        label: "Galerii"
+        name: "galerii"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Pealkiri", name: "title", widget: "string"}
+          - {label: "Sisu", name: "body", widget: "markdown"}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

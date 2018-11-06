@@ -5,6 +5,7 @@ import Img from "gatsby-image";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import { HTMLContent } from "../components/Content";
+import { OrderingForm } from "../components/OrderingForm";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -16,18 +17,32 @@ export default class IndexPage extends React.Component {
         <section className="hero is-medium is-bold">
           <div className="hero-body">
             <div className="container has-text-centered">
-              <h1 className="title has-text-white">
+              <h1 className="title has-text-white is-size-2">
                 {data.markdownRemark.frontmatter.hero}
               </h1>
             </div>
           </div>
         </section>
-        <div className="container">
+        <div className="container section">
+          <div className="columns is-centered content">
+            <div className="column is-clearfix">
+              <div className="custom-box">
+                <Img className="inline-image" fluid={data.imageOne.childImageSharp.fluid}/>
+                <HTMLContent content={data.markdownRemark.html}/>
+              </div>
+            </div>
+            <div className="column is-4">
+              <OrderingForm
+                active={data.markdownRemark.frontmatter.isFormActive}
+                notActiveDescription={data.markdownRemark.frontmatter.notActiveDescription}
+                description={data.markdownRemark.frontmatter.formDescription}
+                heading={data.markdownRemark.frontmatter.formTitle}
+              />
+            </div>
+          </div>
           <div className="card article">
             <div className="card-content">
               <div className="content article-body is-clearfix">
-                <Img className="inline-image" fluid={data.imageOne.childImageSharp.fluid}/>
-                <HTMLContent content={data.markdownRemark.html} />
               </div>
             </div>
           </div>
@@ -59,6 +74,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         hero
+        formTitle
+        formDescription
+        isFormActive
+        notActiveDescription
       }
     }
   }

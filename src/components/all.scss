@@ -12,10 +12,11 @@ $primary-invert: $kaldi-red-invert;
   position: relative;
   + .container {
     @media(min-width: 768px) {
-      margin-top: -3em;
+      //margin-top: -3em;
     }
   }
 }
+
 .hero-body {
   > .container {
     z-index: 1;
@@ -24,7 +25,9 @@ $primary-invert: $kaldi-red-invert;
     content: "";
     position: absolute;
     top: 0;
-    bottom: 0; left: 0; right: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: url("../img/DSC_0180.jpg") no-repeat, linear-gradient(141deg, rgba(255, 175, 36, 0.51) 0%, rgba(255, 221, 87, 0.51) 71%, rgba(255, 250, 112, 0.5) 100%);
     background-size: cover;
     filter: blur(2px);
@@ -43,6 +46,20 @@ $primary-invert: $kaldi-red-invert;
   margin: 0 0 20px 20px;
 }
 
-html, body{
+.custom-box {
+  padding: 2rem;
+}
+
+.react-photo-gallery--gallery {
+  img {
+    cursor: pointer;
+    transition: all .2s ease-out;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+html, body {
   background-color: #fafafa;
 }
