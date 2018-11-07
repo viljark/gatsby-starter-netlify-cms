@@ -7,7 +7,6 @@ import Gallery from "react-photo-gallery";
 import Lightbox from "react-images";
 
 const Image = ({ photo, index, onClick }) => {
-  console.log(photo);
   return (
     <img srcSet={photo.srcSet} onClick={(e) => {
       onClick(e, { index });
@@ -53,7 +52,6 @@ export class GalleryPageTemplate extends React.Component {
       width: img.aspectRatio,
       height: 1
     }));
-    console.log(photos);
     return (
       <section className="section section--gradient">
         <div className="container">
@@ -90,7 +88,6 @@ GalleryPageTemplate.propTypes = {
 const GalleryPage = ({ data }) => {
   const { markdownRemark: post } = data;
   const fluidImgs = data.allFile.edges.map(e => e.node.childImageSharp.fluid);
-  console.log(fluidImgs);
   return (
     <Layout>
       <GalleryPageTemplate

@@ -10,29 +10,29 @@ export const OrderingForm = ({ active, notActiveDescription, heading, descriptio
       <p>
         {description || "Siia täpsem kirjeldus"}
       </p>
-      <form name="order" method="POST" netlify="true">
+      <form name="Tellimus" method="POST" action="/submitForm" data-netlify="true">
         <div className="field">
           <label className="label">Mesilasemade arv</label>
           <div className="control">
-            <input required="true" name="emadeArv" className="input" type="text" placeholder=""/>
+            <input required={true} name="emadeArv" className="input" type="text" placeholder=""/>
           </div>
         </div>
         <div className="field">
           <label className="label">Nimi</label>
           <div className="control">
-            <input required="true" name="nimi" className="input" type="text" placeholder=""/>
+            <input required={true} name="nimi" className="input" type="text" placeholder=""/>
           </div>
         </div>
         <div className="field">
           <label className="label">Telefoni number</label>
           <div className="control">
-            <input required="true" name="telefon" className="input" type="text" placeholder=""/>
+            <input required={true} name="telefon" className="input" type="text" placeholder=""/>
           </div>
         </div>
         <div className="field">
           <label className="label">E-maili aadress</label>
           <div className="control has-icons-left">
-            <input required="true" className="input" type="email" placeholder=""/>
+            <input required={true} className="input" type="email" placeholder=""/>
             <span className="icon is-small is-left">
                         <FaEnvelope/>
                       </span>
@@ -42,7 +42,7 @@ export const OrderingForm = ({ active, notActiveDescription, heading, descriptio
         <div className="field">
           <label className="label">Aadress või pakiautomaadi aadress</label>
           <div className="control has-icons-left">
-            <input required="true" className="input" type="text" placeholder=""/>
+            <input required={true} className="input" type="text" placeholder=""/>
             <span className="icon is-small is-left">
                         <FaBuilding/>
                       </span>
@@ -53,12 +53,12 @@ export const OrderingForm = ({ active, notActiveDescription, heading, descriptio
           <label className="label">Saatmisviis</label>
           <div className="control">
             <div className="select">
-              <select required="true" name="saatmisviis">
-                <option disabled selected>-- Vali saatmisviis --</option>
-                <option>Omniva pakiautomaat</option>
-                <option>Smartpost</option>
-                <option>Tulen ise järele</option>
-                <option>?</option>
+              <select required={true} name="saatmisviis" defaultValue={""}>
+                <option value={""}>-- Vali saatmisviis --</option>
+                <option value={"Omniva"}>Omniva pakiautomaat</option>
+                <option value={"Smartpost"}>Smartpost</option>
+                <option value={"Tulen ise järele"}>Tulen ise järele</option>
+                <option value={"?"}>?</option>
               </select>
             </div>
           </div>
