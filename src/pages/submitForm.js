@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import { Link } from "@reach/router";

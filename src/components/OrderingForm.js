@@ -11,6 +11,7 @@ export const OrderingForm = ({ active, notActiveDescription, heading, descriptio
         {description || "Siia täpsem kirjeldus"}
       </p>
       <form name="Tellimus" method="POST" action="/submitForm" data-netlify="true">
+        <input type="hidden" name="form-name" value="Tellimus" />
         <div className="field">
           <label className="label">Mesilasemade arv</label>
           <div className="control">
