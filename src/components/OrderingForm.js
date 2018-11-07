@@ -33,10 +33,10 @@ export const OrderingForm = ({ active, notActiveDescription, heading, descriptio
         <div className="field">
           <label className="label">E-maili aadress</label>
           <div className="control has-icons-left">
-            <input required={true} className="input" type="email" placeholder=""/>
+            <input required={true} name="email" className="input" type="email" placeholder=""/>
             <span className="icon is-small is-left">
-                        <FaEnvelope/>
-                      </span>
+              <FaEnvelope/>
+            </span>
           </div>
           <p className="help">Vajalik arve edastamiseks</p>
         </div>
