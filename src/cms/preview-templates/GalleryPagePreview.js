@@ -6,6 +6,7 @@ const GalleryPagePreview = ({ entry, widgetFor }) => (
   <GalleryPageTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
+    fluidImgs={[]}
   />
 )
 
