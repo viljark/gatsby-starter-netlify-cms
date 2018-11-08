@@ -17,8 +17,11 @@ const CMSImage = ({ imageInfo = {}, className }) => {
     return <Img className={className} style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />
   }
 
-  if (!!image && typeof image === 'string' || !!imageInfo && typeof imageInfo === 'string')
+  if (!!image && typeof image === 'string')
     return <img className={className} style={imageStyle} src={image} alt={alt} />
+
+  if (!!imageInfo && typeof imageInfo === 'string')
+    return <img className={className} style={imageStyle} src={imageInfo} alt={alt} />
 
   if (!!image && !!image.public_path)
     return <img className={className} style={imageStyle} src={image.public_path} alt={alt} />
