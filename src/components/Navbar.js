@@ -33,6 +33,9 @@ class Navbar extends Component {
               <Link className="navbar-item" to="/">
                 Avaleht
               </Link>
+              <Link className="navbar-item is-hidden-desktop" to="/#tellimine">
+                Tellimine
+              </Link>
               <Link className="navbar-item" to="/ajalugu">
                 Ajalugu
               </Link>

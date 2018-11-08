@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import Testimonials from "../components/Testimonials";
 import Columns from "../components/Columns";
-import Img from "gatsby-image";
+import CMSImage from "../components/CMSImage";
 
 export const HistoryPageTemplate = ({
                                       image,
@@ -20,7 +20,10 @@ export const HistoryPageTemplate = ({
                                     }) => (
   <>
     <section className="hero is-medium is-bold">
-      <Img className="hero-image" fluid={image.childImageSharp.fluid}/>
+      <CMSImage
+        className="hero-image"
+        imageInfo={image}
+      />
       <div className="hero-body">
         <div className="container has-text-centered">
           <h1 className="title has-text-white is-size-2">
@@ -57,29 +60,23 @@ export const HistoryPageTemplate = ({
                     <div className="tile">
                       <div className="tile is-parent is-vertical">
                         <article className="tile is-child">
-                          <img
-                            style={{ borderRadius: "5px" }}
-                            src={main.image1.image.childImageSharp.fluid.src}
-                            alt={main.image1.alt}
+                          <CMSImage
+                            imageInfo={main.image1}
                           />
                         </article>
                       </div>
                       <div className="tile is-parent">
                         <article className="tile is-child">
-                          <img
-                            style={{ borderRadius: "5px" }}
-                            src={main.image2.image.childImageSharp.fluid.src}
-                            alt={main.image2.alt}
+                          <CMSImage
+                            imageInfo={main.image2}
                           />
                         </article>
                       </div>
                     </div>
                     <div className="tile is-parent">
                       <article className="tile is-child">
-                        <img
-                          style={{ borderRadius: "5px" }}
-                          src={main.image3.image.childImageSharp.fluid.src}
-                          alt={main.image3.alt}
+                        <CMSImage
+                          imageInfo={main.image3}
                         />
                       </article>
                     </div>
@@ -88,7 +85,7 @@ export const HistoryPageTemplate = ({
                 <Testimonials testimonials={testimonials}/>
                 <div
                   className="full-width-image-container"
-                  style={{ backgroundImage: `url(${fullImage.childImageSharp.fluid.src})` }}
+                  style={{ backgroundImage: `url(${fullImage.childImageSharp ? fullImage.childImageSharp.fluid.src : fullImage})` }}
 
                 />
                 <h2 className="has-text-weight-semibold is-size-2">

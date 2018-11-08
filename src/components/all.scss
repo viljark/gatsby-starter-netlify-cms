@@ -8,6 +8,11 @@ $primary: $theme-yellow;
 $primary-invert: $kaldi-red-invert;
 @import "~bulma";
 
+html, body {
+  background-color: #fafafa;
+}
+
+
 .hero {
   position: relative;
   + .container {
@@ -39,18 +44,11 @@ $primary-invert: $kaldi-red-invert;
     bottom: 0;
     left: 0;
     right: 0;
-    //background: url("https://images.pexels.com/photos/56876/queen-cup-honeycomb-honey-bee-new-queen-rearing-compartment-56876.jpeg?auto=compress&cs=tinysrgb&");// no-repeat, linear-gradient(141deg, rgba(255, 175, 36, 0.51) 0%, rgba(255, 221, 87, 0.51) 71%, rgba(255, 250, 112, 0.5) 100%);
-    //background-size: cover;
-    //filter: blur(2px);
-    //background-blend-mode: multiply;
   }
 }
 
 .navbar {
-  //background: linear-gradient(90deg, rgba(253, 157, 50, 0.85) 0%, rgba(253, 157, 50, 0.81) 100%);
-  //background: rgba(0,0,0,.5) url("https://images.pexels.com/photos/56876/queen-cup-honeycomb-honey-bee-new-queen-rearing-compartment-56876.jpeg?auto=compress&cs=tinysrgb&") no-repeat 50% 50%;
   background-size: cover;
-  //background-color: transparent !important;
   min-height: 5.25rem !important;
 }
 
@@ -77,25 +75,7 @@ $primary-invert: $kaldi-red-invert;
   }
 }
 
-.full-width-image-container {
-  // Helper Classes
-  width: 100vw;
-  height: 400px;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin: 5em -50vw;
-  background-size: cover;
-  background-position: bottom;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .margin-top-0 {
   margin-top: 0 !important
-}
-
-html, body {
-  background-color: #fafafa;
 }

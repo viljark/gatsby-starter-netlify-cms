@@ -2,7 +2,7 @@ import React from "react";
 import { FaBuilding, FaEnvelope } from "react-icons/fa";
 
 export const OrderingForm = ({ active, notActiveDescription, heading, description }) => (
-  <div className="content box">
+  <div className="content box" id="tellimine">
     <h3 className="">
       {heading || "Mesilasemade tellimine"}
     </h3>
