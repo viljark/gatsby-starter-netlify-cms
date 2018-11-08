@@ -1,10 +1,12 @@
 ---
 templateKey: index-page
 hero: Mesilasemade kasvatus ja müük
+heroImage: /img/hero.jpeg
 formTitle: Tellimiseks palun täida järgnev vorm
 formDescription: Natukene pikem jutt, millal saab tellida
 isFormActive: true
 notActiveDescription: Tellimine pole hetkel aktiivne, tellida saab alates veebruar 2019a
+picture1: /img/DSC_0129.jpg
 ---
 # h1 Heading 8-)
 

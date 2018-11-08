@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import Layout from "../components/Layout";
-import Footer from "../components/Footer";
 import { HTMLContent } from "../components/Content";
 import { OrderingForm } from "../components/OrderingForm";
 
@@ -15,6 +14,7 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <section className="hero is-medium is-bold">
+          <Img className="hero-image" fluid={data.markdownRemark.frontmatter.heroImage.childImageSharp.fluid}/>
           <div className="hero-body">
             <div className="container has-text-centered">
               <h1 className="title has-text-white is-size-2">
@@ -27,7 +27,7 @@ export default class IndexPage extends React.Component {
           <div className="columns is-centered content">
             <div className="column is-clearfix">
               <div className="custom-box">
-                <Img className="inline-image" fluid={data.imageOne.childImageSharp.fluid}/>
+                <Img className="inline-image" fluid={data.markdownRemark.frontmatter.picture1.childImageSharp.fluid}/>
                 <HTMLContent content={data.markdownRemark.html}/>
               </div>
             </div>
@@ -40,14 +40,7 @@ export default class IndexPage extends React.Component {
               />
             </div>
           </div>
-          <div className="card article">
-            <div className="card-content">
-              <div className="content article-body is-clearfix">
-              </div>
-            </div>
-          </div>
         </div>
-        <Footer/>
       </Layout>
     );
   }
@@ -63,17 +56,24 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    imageOne: file(relativePath: {eq: "DSC_0129.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1000, maxHeight: 1000, cropFocus: CENTER) {
-            ...GatsbyImageSharpFluid
-          }
-      }
-    }
     markdownRemark(frontmatter: {templateKey: { eq: "index-page" }}) {
       html
       frontmatter {
         hero
+        heroImage {
+          childImageSharp {
+            fluid(maxWidth: 1920, maxHeight: 351) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        picture1 {
+          childImageSharp {
+            fluid(maxWidth: 500, maxHeight: 500, cropFocus: CENTER) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         formTitle
         formDescription
         isFormActive

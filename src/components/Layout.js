@@ -3,12 +3,14 @@ import Helmet from 'react-helmet'
 
 import Navbar from '../components/Navbar'
 import './all.scss'
+import Footer from "./Footer";
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Mesilasemade kasvatus ja müük" />
     <Navbar />
     <div>{children}</div>
+    <Footer/>
   </div>
 )
 

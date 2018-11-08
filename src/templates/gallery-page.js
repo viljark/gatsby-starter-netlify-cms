@@ -58,7 +58,8 @@ export class GalleryPageTemplate extends React.Component {
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+
+                <h2 className="has-text-weight-semibold is-size-2">
                   {title}
                 </h2>
                 <PageContent className="content" content={content}/>
@@ -118,7 +119,7 @@ export const galleryPageQuery = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
             }
           }

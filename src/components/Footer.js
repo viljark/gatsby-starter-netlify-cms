@@ -10,6 +10,7 @@ class Footer extends Component {
               <strong>emadekasvatus.ee</strong>
               <p className="is-marginless">tel: <a href="tel:55555555">55555555</a></p>
               <p className="is-marginless">e-mail: <a href="maitlo:email@email.com">email@email.com</a></p>
+              <p className="is-marginless">Vaabina, Võrumaa</p>
             </div>
           </div>
         </footer>
