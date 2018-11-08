@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Columns = ({ data }) => (
+const Columns = ({ data = [] }) => (
   <div className="columns">
     {data.map(column => (
       <div key={column.title} className="column">
@@ -14,7 +14,7 @@ const Columns = ({ data }) => (
           </h2>
           <p className="has-text-weight-semibold">{column.description}</p>
           <ul>
-            {column.items.map(item => (
+            {column.items && column.items.map(item => (
               <li key={item} className="is-size-5">
                 {item}
               </li>

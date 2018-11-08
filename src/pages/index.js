@@ -46,14 +46,6 @@ export default class IndexPage extends React.Component {
   }
 }
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array
-    })
-  })
-};
-
 export const pageQuery = graphql`
   query IndexQuery {
     markdownRemark(frontmatter: {templateKey: { eq: "index-page" }}) {
