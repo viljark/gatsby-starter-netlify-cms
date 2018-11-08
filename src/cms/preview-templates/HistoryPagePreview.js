@@ -42,6 +42,7 @@ const HistoryPagePreview = ({ entry, getAsset }) => {
         description: entry.getIn(['data', 'columns', 'description']),
         columns: columns,
       }}
+      footer={{}}
     />
   )
 }

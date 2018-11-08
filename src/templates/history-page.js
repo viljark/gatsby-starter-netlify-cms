@@ -1,11 +1,11 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import Testimonials from "../components/Testimonials";
 import Columns from "../components/Columns";
 import CMSImage from "../components/CMSImage";
+import Footer from "../components/Footer";
 
 export const HistoryPageTemplate = ({
                                       image,
@@ -16,7 +16,7 @@ export const HistoryPageTemplate = ({
                                       main,
                                       testimonials,
                                       fullImage,
-                                      columns
+                                      columns,
                                     }) => (
   <>
     <section className="hero is-medium is-bold">
@@ -99,12 +99,12 @@ export const HistoryPageTemplate = ({
         </div>
       </div>
     </section>
+    <Footer/>
   </>
 );
 
 const HistoryPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
   return (
     <Layout>
       <HistoryPageTemplate
@@ -120,14 +120,6 @@ const HistoryPage = ({ data }) => {
       />
     </Layout>
   );
-};
-
-HistoryPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
 };
 
 export default HistoryPage;

@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Footer from "../components/Footer";
+import FooterTemplate from "../components/Footer";
 import { Link } from "@reach/router";
 
 export default class IndexPage extends React.Component {
@@ -22,7 +22,7 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
-        <Footer/>
+        <FooterTemplate/>
       </Layout>
     );
   }

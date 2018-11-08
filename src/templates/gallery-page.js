@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import Gallery from "react-photo-gallery";
 import Lightbox from "react-images";
+import Footer from "../components/Footer";
 
 const Image = ({ photo, index, onClick }) => {
   return (
@@ -53,38 +54,35 @@ export class GalleryPageTemplate extends React.Component {
       height: 1
     }));
     return (
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
+      <>
+        <section className="section section--gradient">
+          <div className="container">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <div className="section">
 
-                <h2 className="has-text-weight-semibold is-size-2">
-                  {title}
-                </h2>
-                <PageContent className="content" content={content}/>
-                <Gallery ImageComponent={Image} photos={photos} onClick={this.openLightbox}/>
-                <Lightbox images={photos}
-                          onClose={this.closeLightbox}
-                          onClickPrev={this.gotoPrevious}
-                          onClickNext={this.gotoNext}
-                          currentImage={this.state.currentImage}
-                          isOpen={this.state.lightboxIsOpen}
-                />
+                  <h2 className="has-text-weight-semibold is-size-2">
+                    {title}
+                  </h2>
+                  <PageContent className="content" content={content}/>
+                  <Gallery ImageComponent={Image} photos={photos} onClick={this.openLightbox}/>
+                  <Lightbox images={photos}
+                            onClose={this.closeLightbox}
+                            onClickPrev={this.gotoPrevious}
+                            onClickNext={this.gotoNext}
+                            currentImage={this.state.currentImage}
+                            isOpen={this.state.lightboxIsOpen}
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <Footer/>
+      </>
     );
   }
 }
-
-GalleryPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func
-};
 
 const GalleryPage = ({ data }) => {
   const { markdownRemark: post } = data;

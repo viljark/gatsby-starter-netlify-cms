@@ -13,7 +13,7 @@ collections:
         label: "Avaleht"
         name: "avaleht"
         fields:
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index"}
         - {label: "Suur tekst", name: "hero", widget: "string"}
         - {label: "Bänner", name: "heroImage", widget: image}
         - {label: "Tellimisvormi pealkiri", name: "formTitle", widget: "string"}
@@ -21,7 +21,8 @@ collections:
         - {label: "Kas vorm on aktiivne?", name: "isFormActive", widget: "boolean"}
         - {label: "Mitteaktiivse vormi asemel tekst", name: "notActiveDescription", widget: "string"}
         - {label: "Avalehe pilt 1", name: "picture1", widget: image}
-        - {label: Jalus, name: footer, widget: object, fields: [{label: "Jaluse tekst", name: "text", widget: "string"}, {label: "Telefoni nr", name: "telephone", widget: "string"}, {label: "Sisu", name: "email", widget: "string"}, {label: "Sisu", name: "address", widget: "string"}]}
+        - {label: "Lehe sisu", name: "body", widget: "markdown"}
+        - {label: Jalus, name: footer, widget: object, fields: [{label: "Jaluse tekst", name: "text", widget: "string"}, {label: "Telefoni nr", name: "telephone", widget: "string"}, {label: "Sisu", name: "email", widget: "string"}, {label: "Aadress", name: "address", widget: "string"}]}
       - file: "src/pages/galerii/index.md"
         label: "Galerii"
         name: "galerii"

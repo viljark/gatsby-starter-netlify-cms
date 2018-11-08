@@ -7,6 +7,7 @@ const GalleryPagePreview = ({ entry, widgetFor }) => (
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
     fluidImgs={[]}
+    footer={{}}
   />
 )
 
