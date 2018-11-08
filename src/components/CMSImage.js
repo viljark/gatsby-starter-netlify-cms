@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 
 const CMSImage = ({ imageInfo = {}, className }) => {
   const imageStyle = { borderRadius: '5px' }
+  console.log('imageInfo', imageInfo);
   const { alt = '', childImageSharp, image } = imageInfo
 
   if (!!image && !!image.childImageSharp) {
@@ -16,8 +17,11 @@ const CMSImage = ({ imageInfo = {}, className }) => {
     return <Img className={className} style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />
   }
 
-  if (!!image && typeof image === 'string')
+  if (!!image && typeof image === 'string' || !!imageInfo && typeof imageInfo === 'string')
     return <img className={className} style={imageStyle} src={image} alt={alt} />
+
+  if (!!image && !!image.public_path)
+    return <img className={className} style={imageStyle} src={image.public_path} alt={alt} />
 
   return null
 }
