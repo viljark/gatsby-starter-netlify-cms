@@ -5,6 +5,6 @@ import HistoryPagePreview from './preview-templates/HistoryPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
 CMS.registerPreviewTemplate('galerii', GalleryPagePreview)
-CMS.registerPreviewTemplate('products', HistoryPagePreview)
+CMS.registerPreviewTemplate('ajalugu', HistoryPagePreview)
 CMS.registerPreviewTemplate('avaleht', IndexPagePreview)
 window.UPLOADCARE_LOCALE = 'et';
