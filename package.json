@@ -29,7 +29,8 @@
     "react-icons": "^3.2.2",
     "react-images": "^0.5.19",
     "react-photo-gallery": "^6.2.1",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "video-react": "^0.13.1"
   },
   "keywords": [
     "gatsby"

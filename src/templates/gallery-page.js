@@ -6,6 +6,8 @@ import Content, { HTMLContent } from "../components/Content";
 import Gallery from "react-photo-gallery";
 import Lightbox from "react-images";
 import Footer from "../components/Footer";
+import Videos from "../components/Videos";
+
 
 const Image = ({ photo, index, onClick }) => {
   return (
@@ -55,17 +57,16 @@ export class GalleryPageTemplate extends React.Component {
     }));
     return (
       <>
-        <section className="section section--gradient">
+        <section className="section">
           <div className="container">
             <div className="columns">
               <div className="column is-10 is-offset-1">
-                <div className="section">
-
                   <h2 className="has-text-weight-semibold is-size-2">
                     {title}
                   </h2>
                   <PageContent className="content" content={content}/>
                   <Gallery ImageComponent={Image} photos={photos} onClick={this.openLightbox}/>
+                  <Videos/>
                   <Lightbox images={photos}
                             onClose={this.closeLightbox}
                             onClickPrev={this.gotoPrevious}
@@ -73,7 +74,6 @@ export class GalleryPageTemplate extends React.Component {
                             currentImage={this.state.currentImage}
                             isOpen={this.state.lightboxIsOpen}
                   />
-                </div>
               </div>
             </div>
           </div>

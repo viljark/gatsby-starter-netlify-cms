@@ -16,7 +16,7 @@ export const HistoryPageTemplate = ({
                                       main,
                                       testimonials,
                                       fullImage,
-                                      columns,
+                                      columns
                                     }) => (
   <>
     <section className="hero is-medium is-bold">
@@ -26,74 +26,71 @@ export const HistoryPageTemplate = ({
       />
       <div className="hero-body">
         <div className="container has-text-centered">
-          <h1 className="title has-text-white is-size-2">
+          <h1 className="title has-text-white is-size-2 is-size-3-mobile">
             {title}
           </h1>
         </div>
       </div>
     </section>
-    <section className="section section--gradient">
+    <section className="section">
       <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="columns">
-                  <div className="column is-7">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="content">
+              <div className="columns">
+                <div className="column is-7">
+                  <h3 className="has-text-weight-semibold is-size-2">
+                    {heading}
+                  </h3>
+                  <p>{description}</p>
                 </div>
-                <Features gridItems={intro.blurbs}/>
-                <div className="columns">
-                  <div className="column is-7">
-                    <h3 className="has-text-weight-semibold is-size-3">
-                      {main.heading}
-                    </h3>
-                    <p>{main.description}</p>
-                  </div>
+              </div>
+              <Features gridItems={intro.blurbs}/>
+              <div className="columns">
+                <div className="column is-7">
+                  <h3 className="has-text-weight-semibold is-size-3">
+                    {main.heading}
+                  </h3>
+                  <p>{main.description}</p>
                 </div>
-                <div className="tile is-ancestor">
-                  <div className="tile is-vertical">
-                    <div className="tile">
-                      <div className="tile is-parent is-vertical">
-                        <article className="tile is-child">
-                          <CMSImage
-                            imageInfo={main.image1}
-                          />
-                        </article>
-                      </div>
-                      <div className="tile is-parent">
-                        <article className="tile is-child">
-                          <CMSImage
-                            imageInfo={main.image2}
-                          />
-                        </article>
-                      </div>
+              </div>
+              <div className="tile is-ancestor">
+                <div className="tile is-vertical">
+                  <div className="tile">
+                    <div className="tile is-parent is-vertical">
+                      <article className="tile is-child">
+                        <CMSImage
+                          imageInfo={main.image1}
+                        />
+                      </article>
                     </div>
                     <div className="tile is-parent">
                       <article className="tile is-child">
                         <CMSImage
-                          imageInfo={main.image3}
+                          imageInfo={main.image2}
                         />
                       </article>
                     </div>
                   </div>
+                  <div className="tile is-parent">
+                    <article className="tile is-child">
+                      <CMSImage
+                        imageInfo={main.image3}
+                      />
+                    </article>
+                  </div>
                 </div>
-                <Testimonials testimonials={testimonials}/>
-                <div
-                  className="full-width-image-container"
-                  style={{ backgroundImage: `url(${fullImage && fullImage.childImageSharp ? fullImage.childImageSharp.fluid.src : fullImage})` }}
-
-                />
-                <h2 className="has-text-weight-semibold is-size-2">
-                  {columns.heading}
-                </h2>
-                <p className="is-size-5">{columns.description}</p>
-                <Columns data={columns.columns}/>
               </div>
+              <Testimonials testimonials={testimonials}/>
+              <div
+                className="full-width-image-container"
+                style={{ backgroundImage: `url(${fullImage && fullImage.childImageSharp ? fullImage.childImageSharp.fluid.src : fullImage})` }}
+              />
+              <h2 className="has-text-weight-semibold is-size-2">
+                {columns.heading}
+              </h2>
+              <p className="is-size-5">{columns.description}</p>
+              <Columns data={columns.columns}/>
             </div>
           </div>
         </div>

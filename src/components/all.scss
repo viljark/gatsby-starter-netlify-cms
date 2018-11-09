@@ -2,10 +2,10 @@
 
 // Config vars
 $theme-yellow: #fd9d32;
-$kaldi-red-invert: #fff;
+$inverted: #fff;
 
 $primary: $theme-yellow;
-$primary-invert: $kaldi-red-invert;
+$primary-invert: $inverted;
 @import "~bulma";
 
 html, body {
@@ -14,11 +14,6 @@ html, body {
 
 .hero {
   position: relative;
-  + .container {
-    @media(min-width: 768px) {
-      //margin-top: -3em;
-    }
-  }
   .title {
     background: $theme-yellow;
     display: inline-block;
@@ -48,22 +43,26 @@ html, body {
 
 .navbar {
   background-size: cover;
-  min-height: 5.25rem !important;
+  @media(min-width: $desktop) {
+    min-height: 5.25rem !important;
+  }
 }
 
 .inline-image {
   width: 50%;
   float: right;
   margin: 0 0 20px 20px;
-  @media(min-width: 768px) {
+  @media(min-width: $tablet - 1) {
     width: 35%;
   }
 }
 
 .custom-box {
   padding: 2rem;
+  @media(max-width: $tablet) {
+    padding: 0;
+  }
 }
-
 .react-photo-gallery--gallery {
   img {
     cursor: pointer;
@@ -89,6 +88,29 @@ html, body {
   align-items: center;
 }
 
-.margin-top-0 {
-  margin-top: 0 !important
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  > * {
+    flex-basis: calc(50% - 4px);
+    margin: 2px;
+    position: relative;
+    @media(max-width: $tablet) {
+      flex-basis: 100%;
+    }
+    &:hover, &:focus {
+      .videos__name {
+        opacity: 0;
+      }
+    }
+  }
+  &__name {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    transition: all .2s ease-out;
+    font-size: 18px;
+    padding: .5em;
+  }
 }

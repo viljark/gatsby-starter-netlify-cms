@@ -17,7 +17,7 @@ export class IndexPageTemplate extends React.Component {
           <CMSImage className="hero-image" imageInfo={heroImage}/>
           <div className="hero-body">
             <div className="container has-text-centered">
-              <h1 className="title has-text-white is-size-2">
+              <h1 className="title has-text-white is-size-2 is-size-3-mobile">
                 {hero}
               </h1>
             </div>
@@ -26,10 +26,8 @@ export class IndexPageTemplate extends React.Component {
         <div className="container section">
           <div className="columns is-centered content">
             <div className="column is-clearfix">
-              <div className="custom-box">
-                <CMSImage className="inline-image" imageInfo={picture1}/>
-                <PageContent content={html}/>
-              </div>
+              <CMSImage className="inline-image" imageInfo={picture1}/>
+              <PageContent content={html}/>
             </div>
             <div className="column is-4">
               <OrderingForm
