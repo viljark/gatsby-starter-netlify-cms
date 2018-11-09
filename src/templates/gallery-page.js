@@ -86,7 +86,7 @@ export class GalleryPageTemplate extends React.Component {
 
 const GalleryPage = ({ data }) => {
   const { markdownRemark: post } = data;
-  const fluidImgs = data.allFile.edges.map(e => e.node.childImageSharp.fluid);
+  const fluidImgs = data.allFile.edges.filter(e => e.node.childImageSharp).map(e => e.node.childImageSharp.fluid);
   return (
     <Layout>
       <GalleryPageTemplate
