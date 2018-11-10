@@ -55,9 +55,9 @@ export const HistoryPageTemplate = ({
                 </div>
               </div>
               <div className="tile is-ancestor">
-                <div className="tile is-vertical">
+                <div className="tile">
                   <div className="tile">
-                    <div className="tile is-parent is-vertical">
+                    <div className="tile is-parent">
                       <article className="tile is-child">
                         <CMSImage
                           imageInfo={main.image1}
@@ -72,13 +72,15 @@ export const HistoryPageTemplate = ({
                       </article>
                     </div>
                   </div>
-                  <div className="tile is-parent">
-                    <article className="tile is-child">
-                      <CMSImage
-                        imageInfo={main.image3}
-                      />
-                    </article>
-                  </div>
+                </div>
+              </div>
+              <div className="tile is-ancestor">
+                <div className="tile is-parent">
+                  <article className="tile is-child">
+                    <CMSImage
+                      imageInfo={main.image3}
+                    />
+                  </article>
                 </div>
               </div>
               <Testimonials testimonials={testimonials}/>
