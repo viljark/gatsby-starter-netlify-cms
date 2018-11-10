@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import favicon from "../img/favicon.ico";
 import "./all.scss";
 
-typeof window !== 'undefined' && require("picturefill");
+typeof window !== 'undefined' && require("picturefill") && require("picturefill/dist/plugins/mutation/pf.mutation");
 
 const TemplateWrapper = ({ children }) => (
   <div>
