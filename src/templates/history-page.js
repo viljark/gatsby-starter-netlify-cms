@@ -128,7 +128,7 @@ export const HistoryPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 1920) {
+            fluid(maxWidth: 1920, maxHeight: 351) {
               ...GatsbyImageSharpFluid
             }
           }

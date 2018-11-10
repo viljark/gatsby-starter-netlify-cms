@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 
 import Navbar from "../components/Navbar";
 import favicon from "../img/favicon.ico";
+import "picturefill";
 import "./all.scss";
 
 const TemplateWrapper = ({ children }) => (
