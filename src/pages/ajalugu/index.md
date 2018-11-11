@@ -48,6 +48,10 @@ columns:
     monthly subscription plans to receive great coffee at your doorstep each
     month. Contact us about more details and payment info.
   columns:
-    - title: ''
+    - big: ' '
+      title: ' '
+      description: ' '
+      items:
+        - ''
 ---
 
