@@ -43,7 +43,7 @@ export const OrderingForm = ({ active, notActiveDescription, heading, descriptio
         <div className="field">
           <label className="label">Aadress või pakiautomaadi aadress</label>
           <div className="control has-icons-left">
-            <input required={true} className="input" type="text" placeholder=""/>
+            <input required={true} name="aadress" className="input" type="text" placeholder=""/>
             <span className="icon is-small is-left">
                         <FaBuilding/>
                       </span>
