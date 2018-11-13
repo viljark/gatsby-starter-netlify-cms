@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Columns = ({ data = [] }) => (
   <div className="columns">
-    {data.map(column => (
+    {data && data.map(column => (
       <div key={column.title} className="column">
         <section className="section">
           <h4 className="has-text-centered has-text-weight-semibold">
