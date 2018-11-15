@@ -20,7 +20,7 @@ Mille pärast me kasutame ise ja soovitame kasutada ka teistel põhjamaiseid ita
 Valikute tegemisel on lähtutud mitmest kriteeriumist, nendeks on:
 
 * haiguskindlus
-* saagikus,
+* saagikus
 * rahulikkus
 * sülemlemiskainus
 * talvekindlus
@@ -29,10 +29,6 @@ Meie poolt kasvatatavad emad on vabalt paarunud. Need emad sobivad suurepärasel
 
 Paarla asub piirkonnas, kus on üle tuhande mesilaspere, mis suuremalt jaolt on pärit samast algmaterjalist.
 
-
-
 ![null](/img/DSC_0879.jpg)
-
-
 
 ![null](/img/whatsapp-image-2018-11-08-at-20.53.57.jpeg)
