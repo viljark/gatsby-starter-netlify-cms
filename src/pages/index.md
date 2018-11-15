@@ -19,9 +19,9 @@ Mille pärast me kasutame ise ja soovitame kasutada ka teistel põhjamaiseid ita
 
 Valikute tegemisel on lähtutud mitmest kriteeriumist, nendeks on:
 
-* haiguskindlus,
-* saagikus, 
-* rahulikkus,
+* haiguskindlus
+* saagikus,
+* rahulikkus
 * sülemlemiskainus
 * talvekindlus
 
