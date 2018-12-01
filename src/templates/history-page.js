@@ -45,7 +45,7 @@ export const HistoryPageTemplate = ({
                   <p>{description}</p>
                 </div>
               </div>
-              <Features gridItems={intro.blurbs}/>
+              {intro && intro.blurbs && <Features gridItems={intro.blurbs}/>}
               <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
