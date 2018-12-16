@@ -13,6 +13,7 @@ const TemplateWrapper = ({ children }) => (
       <title>Mesilasemade kasvatus ja müük</title>
       <link rel="shortcut icon" type="image/png" href={`${favicon}`}/>
       <meta name="description" content="Mesilasemade kasvatus ja müük"/>
+      <meta name="google-site-verification" content="DD9F-Odf_EZ2jaCNc3GnjlLW8dhzwz6cUTKgw6wikgA" />
       {/*<meta name="image" content={image} />*/}
 
       {/* OpenGraph tags */}
