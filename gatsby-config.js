@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Mesilasemade kasvatus ja müük',
+    siteUrl: `https://emadekasvatus.ee`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ["/_schema", "/_schema/*", `/submitForm`],
+      }
+    },
     {
       resolve: `gatsby-plugin-netlify-cms-paths`,
       options: {
