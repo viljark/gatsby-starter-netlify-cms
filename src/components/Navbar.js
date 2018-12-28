@@ -43,7 +43,7 @@ class Navbar extends Component {
                 Galerii
               </Link>
               <a className="navbar-item"
-                 href="https://www.kuldnebors.ee/search/pollumajandus/pollu-ja-aiasaadused-toidukaubad/varske-urvaste-mesi/search.mec?pob_post_id=82182579&pob_action=show_post&pob_cat_id=10833&pob_browser_offset=&pob_view_language_id=et">
+                 href="https://urvastemesi.ee">
                 Mee müük
               </a>
             </div>
