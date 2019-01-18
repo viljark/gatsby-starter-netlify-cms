@@ -3,7 +3,7 @@ templateKey: index
 hero: Mesilasemade kasvatus ja müük
 heroImage: /img/hero.jpeg
 formTitle: Tellimiseks palun täida järgnev vorm
-formDescription: 'Natukene pikem jutt, millal saab tellida'
+formDescription: 'Mesilasema hind: 1-20 tk - a 30 eur. 20 - 50 tk. 27 eur.'
 isFormActive: true
 notActiveDescription: Tellimine pole hetkel aktiivne.
 picture1: /img/DSC_0129.jpg
