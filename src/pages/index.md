@@ -4,12 +4,12 @@ hero: Mesilasemade kasvatus ja müük
 heroImage: /img/hero.jpeg
 formTitle: Tellimiseks palun täida järgnev vorm
 formDescription: 'Natukene pikem jutt, millal saab tellida'
-isFormActive: false
+isFormActive: true
 notActiveDescription: Tellimine pole hetkel aktiivne.
 picture1: /img/DSC_0129.jpg
 footer:
   address: 'Vaabina, Võrumaa'
-  email: valmarlutsar@gmail.com
+  email: emadekasvatus@gmail.com
   telephone: +372 56684526
   text: emadekasvatus.ee
 ---
