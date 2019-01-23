@@ -8,10 +8,10 @@ isFormActive: true
 notActiveDescription: Tellimine pole hetkel aktiivne.
 picture1: /img/DSC_0129.jpg
 footer:
-  address: 'Vaabina, Võrumaa'
+  address: 'Kastani 9, Vaabina, Võrumaa, 66519'
   email: emadekasvatus@gmail.com
   telephone: +372 56684526
-  text: emadekasvatus.ee
+  text: Emadekasvatus OÜ Reg. 14646906
 ---
 Oleme saanud oma mesilasemade kasvatuse kogemuse Soomes Juha Nuutero juures mesindades. Samuti on sealt pärit emade algmaterjal – soomes aklimatiseerunud itaalia mesilane.
 
