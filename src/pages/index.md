@@ -10,7 +10,7 @@ picture1: /img/DSC_0129.jpg
 footer:
   address: 'Kastani 9, Vaabina, Võrumaa, 66519'
   email: emadekasvatus@gmail.com
-  telephone: +372 56684526
+  telephone: +372 56684526 Valmar Lutsar    +372 55903823 Rain Kärgenberg
   text: Emadekasvatus OÜ Reg. 14646906
 ---
 Oleme saanud oma mesilasemade kasvatuse kogemuse Soomes Juha Nuutero juures mesindades. Samuti on sealt pärit emade algmaterjal – soomes aklimatiseerunud itaalia mesilane.
