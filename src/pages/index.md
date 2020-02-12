@@ -5,7 +5,7 @@ heroImage: /img/hero.jpeg
 formTitle: Tellimiseks palun täida järgnev vorm
 formDescription: >-
   Mesilasema hind: 1-5 tk - a 30 eur. 6 - 12 tk. 27 eur. Suuremate tellimuste
-  hinnad kokkuleppel
+  korral hinnad kokkuleppel
 isFormActive: true
 notActiveDescription: Tellimine pole hetkel aktiivne.
 picture1: /img/DSC_0129.jpg
