@@ -4,10 +4,10 @@ hero: Mesilasemade kasvatus ja müük
 heroImage: /img/hero.jpeg
 formTitle: Tellimiseks palun täida järgnev vorm
 formDescription: >-
-  Mesilasema hind: 1-5 tk - a 30 eur. 6 - 12 tk. 27 eur. Suuremate tellimuste
+  Mesilasema hind: 1-5 tk - a 30 eur. 6 - 12 tk. 28 eur. Suuremate tellimuste
   korral hinnad kokkuleppel
 isFormActive: true
-notActiveDescription: Vorm on aktiivne
+notActiveDescription: Hetkel on tellimine suletud.
 picture1: /img/DSC_0129.jpg
 footer:
   address: 'Kastani 9, Vaabina, Võrumaa, 66519'
