@@ -58,8 +58,8 @@ export class FooterTemplate extends Component {
           <div className="content is-small has-text-centered">
             <div>
               <strong>{text}</strong>
-              <p className="is-marginless">tel: <a href={`tel:${telephone}`}>{telephoneName}</a></p>
-              <p className="is-marginless">tel: <a href={`tel:${telephone2}`}>{telephone2Name}</a></p>
+              <p className="is-marginless">tel: <a href={`tel:${telephone}`}>{telephone} {telephoneName}</a></p>
+              <p className="is-marginless">tel: <a href={`tel:${telephone2}`}>{telephone2} {telephone2Name}</a></p>
               <p className="is-marginless">e-mail: <a href={`mailto:${email}`}>{email}</a></p>
               <p className="is-marginless">{address}</p>
             </div>
