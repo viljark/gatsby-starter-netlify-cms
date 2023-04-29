@@ -95,6 +95,9 @@ export const pageQuery = graphql`
             footer {
               text
               telephone
+              telephoneName
+              telephone2
+              telephone2Name
               email
               address
             }

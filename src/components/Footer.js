@@ -21,6 +21,9 @@ class Footer extends Component {
                     footer {
                       text
                       telephone
+                      telephoneName
+                      telephone2
+                      telephone2Name
                       email
                       address
                     }
@@ -44,6 +47,8 @@ export class FooterTemplate extends Component {
       text,
       email,
       telephone,
+      telephoneName,
+      telephone2Name,
       address
     } = this.props;
     return (
@@ -52,7 +57,8 @@ export class FooterTemplate extends Component {
           <div className="content is-small has-text-centered">
             <div>
               <strong>{text}</strong>
-              <p className="is-marginless">tel: <a href={`tel:${telephone}`}>{telephone}</a></p>
+              <p className="is-marginless">tel: <a href={`tel:${telephone}`}>{telephoneName}</a></p>
+              <p className="is-marginless">tel: <a href={`tel:${telephone2}`}>{telephone2Name}</a></p>
               <p className="is-marginless">e-mail: <a href={`mailto:${email}`}>{email}</a></p>
               <p className="is-marginless">{address}</p>
             </div>

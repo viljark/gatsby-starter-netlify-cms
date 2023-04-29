@@ -15,6 +15,9 @@ const IndexPagePreview = ({ entry, widgetFor }) => (
       text: entry.getIn(["data", "footer", "text"]),
       email: entry.getIn(["data", "footer", "email"]),
       telephone: entry.getIn(["data", "footer", "telephone"]),
+      telephoneName: entry.getIn(["data", "footer", "telephoneName"]),
+      telephone2: entry.getIn(["data", "footer", "telephone2"]),
+      telephone2Name: entry.getIn(["data", "footer", "telephone2Name"]),
       address: entry.getIn(["data", "footer", "address"])
     }}
   />

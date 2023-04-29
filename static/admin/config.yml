@@ -23,7 +23,7 @@ collections:
         - {label: "Mitteaktiivse vormi asemel tekst", name: "notActiveDescription", widget: "string"}
         - {label: "Avalehe pilt 1", name: "picture1", widget: image}
         - {label: "Lehe sisu", name: "body", widget: "markdown"}
-        - {label: Jalus, name: footer, widget: object, fields: [{label: "Jaluse tekst", name: "text", widget: "string"}, {label: "Telefoni nr", name: "telephone", widget: "string"}, {label: "E-mail", name: "email", widget: "string"}, {label: "Aadress", name: "address", widget: "string"}]}
+        - {label: Jalus, name: footer, widget: object, fields: [{label: "Jaluse tekst", name: "text", widget: "string"}, {label: "Telefoni nr", name: "telephone", widget: "string"}, {label: "Telefoni nr omanik", name: "telephoneName", widget: "string"}, {label: "Telefoni nr 2", name: "telephone2", widget: "string"}, {label: "Telefoni nr 2 omanik", name: "telephone2Name", widget: "string"}, {label: "E-mail", name: "email", widget: "string"}, {label: "Aadress", name: "address", widget: "string"}]}
       - file: "src/pages/galerii/index.md"
         label: "Galerii"
         name: "galerii"
