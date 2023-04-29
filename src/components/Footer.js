@@ -48,6 +48,7 @@ export class FooterTemplate extends Component {
       email,
       telephone,
       telephoneName,
+      telephone2,
       telephone2Name,
       address
     } = this.props;
