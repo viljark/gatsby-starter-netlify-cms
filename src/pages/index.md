@@ -36,5 +36,4 @@ Paarla asub piirkonnas, kus on üle tuhande mesilaspere, mis suuremalt jaolt on 
 
 2020 Suvel tegime Kristjan-Jaak Nuudiga filmi mesilasemade kasvatusest.
 <iframe width="100%" height="482" src="https://www.youtube.com/embed/QHZAQwubppc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- 
 ![null](/img/whatsapp-image-2018-11-08-at-20.53.57.jpeg)
