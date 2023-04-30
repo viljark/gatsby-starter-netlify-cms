@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Mesilasemade kasvatus ja müük',
-    siteUrl: `https://emadekasvatus.ee`,
+    siteUrl: `https://mesilasemad.ee`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',

@@ -17,7 +17,7 @@ const TemplateWrapper = ({ children }) => (
       {/*<meta name="image" content={image} />*/}
 
       {/* OpenGraph tags */}
-      <meta property="og:url" content="https://emadekasvatus.ee"/>
+      <meta property="og:url" content="https://mesilasemad.ee"/>
       <meta property="og:title" content="Mesilasemade kasvatus ja müük"/>
       <meta property="og:description" content="Mesilasemade kasvatus ja müük"/>
     </Helmet>
