@@ -5,74 +5,48 @@ export const OrderingForm = ({ active, notActiveDescription, heading, descriptio
 	const today = new Date();
 	const year = today.getFullYear();
 
-	// Find the first Monday of the year
-	const firstDayOfYear = new Date(year, 0, 1);
-	const firstMonday = new Date(
-		year,
-		0,
-		7 - (firstDayOfYear.getDay() + 6) % 7
-	);
-
-	// Find the current week number and start date
-	const currentWeekNumber = getWeekNumber(today, firstMonday);
-	let currentWeekStart = new Date(firstMonday.getTime());
-	currentWeekStart.setDate(currentWeekStart.getDate() + (currentWeekNumber - 1) * 7);
-
-	// Adjust current week's start date to the nearest Monday
-	while (currentWeekStart.getDay() !== 1) {
-		currentWeekStart.setDate(currentWeekStart.getDate() + 1);
+// Find the start of the first week to show (either today or June 1)
+	let firstWeekStart
+	if (today >= new Date(year, 5, 1)) {
+		firstWeekStart = new Date(today.getTime())
+		while (firstWeekStart.getDay() !== 1) {
+			firstWeekStart.setDate(firstWeekStart.getDate() + 1)
+		}
+	} else {
+		firstWeekStart = new Date(year, 5, 1)
+		while (firstWeekStart.getDay() !== 1) {
+			firstWeekStart.setDate(firstWeekStart.getDate() - 1)
+		}
 	}
 
-	// Initialize empty array of weeks
-	const weeks = [];
+// Find the end of the last week to show (August 31)
+	const lastWeekEnd = new Date(year, 7, 31)
+	while (lastWeekEnd.getDay() !== 0) {
+		lastWeekEnd.setDate(lastWeekEnd.getDate() + 1)
+	}
+	const lastWeekStart = new Date(lastWeekEnd.getTime())
+	lastWeekStart.setDate(lastWeekStart.getDate() - 6)
 
-	// Add options for each remaining week of the year
-	for (let i = currentWeekNumber; i <= 52; i++) {
-		const weekStart = new Date(firstMonday.getTime());
-		weekStart.setDate(weekStart.getDate() + (i - 1) * 7);
 
-		// Add one day to start on a Monday
-		weekStart.setDate(weekStart.getDate() + 1);
+	const weeks = []
 
-		const weekEnd = new Date(weekStart.getTime());
-		weekEnd.setDate(weekEnd.getDate() + 6);
+// Add options for each week between the first and last weeks
+	let weekStart = new Date(firstWeekStart.getTime())
 
-		// Subtract one day to end on a Sunday
-		weekEnd.setDate(weekEnd.getDate());
-
-		if (i === currentWeekNumber) {
-			// Adjust current week's end date to the nearest Sunday
-			while (weekEnd.getDay() !== 0) {
-				weekEnd.setDate(weekEnd.getDate() + 1);
-			}
-
-			// Adjust current week's start date to the nearest Monday
-			while (currentWeekStart.getDay() !== 1) {
-				currentWeekStart.setDate(currentWeekStart.getDate() + 1);
-			}
-
-			// Add one day to current week's start date
-			currentWeekStart.setDate(currentWeekStart.getDate() + 1);
-		}
-
-		const monthFormatOptions = { month: "long" };
+	while (weekStart <= lastWeekStart) {
+		const weekEnd = new Date(weekStart.getTime())
+		weekEnd.setDate(weekEnd.getDate() + 6)
+		const monthFormatOptions = {month: "long"}
 		const label = `${weekStart.getDate()}. ${weekStart.toLocaleString(
 			"et-EE",
 			monthFormatOptions
 		)} - ${weekEnd.getDate()}. ${weekEnd.toLocaleString(
 			"et-EE",
 			monthFormatOptions
-		)}`;
-
-		const value = `${weekStart.toISOString()}_${weekEnd.toISOString()}`;
-		weeks.push({ label, value });
-	}
-
-	function getWeekNumber(date, firstMonday) {
-		const daysSinceFirstMonday = Math.floor(
-			(date.getTime() - firstMonday.getTime()) / (1000 * 60 * 60 * 24)
-		);
-		return 1 + Math.floor(daysSinceFirstMonday / 7);
+		)}`
+		const value = `${weekStart.toISOString()}_${weekEnd.toISOString()}`
+		weeks.push({label, value})
+		weekStart.setDate(weekStart.getDate() + 7)
 	}
 
  return (
