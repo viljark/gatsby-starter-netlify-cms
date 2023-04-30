@@ -1,7 +1,7 @@
 ---
 templateKey: index
 hero: Mesilasemade kasvatus ja müük
-heroImage: /img/hästi-kollane-mesilasema.jpg
+heroImage: /img/hero.jpeg
 formTitle: Tellimiseks palun täida järgnev vorm
 formDescription: >-
   Mesilasema hind: 1-5 tk - a 30 eur. 6 - 12 tk. 28 eur. Suuremate tellimuste
