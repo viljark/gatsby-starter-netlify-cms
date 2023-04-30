@@ -1,7 +1,7 @@
 ---
 templateKey: index
 hero: Mesilasemade kasvatus ja müük
-heroImage: /img/hero.jpeg
+heroImage: /img/hästi-kollane-mesilasema.jpg
 formTitle: Tellimiseks palun täida järgnev vorm
 formDescription: >-
   Mesilasema hind: 1-5 tk - a 30 eur. 6 - 12 tk. 28 eur. Suuremate tellimuste
@@ -13,9 +13,9 @@ footer:
   address: 'Kastani 9, Vaabina, Võrumaa, 66519'
   email: emadekasvatus@gmail.com
   telephone: +372 56684526
-  telephoneName: Valmar Lutsar
   telephone2: +372 55903823
   telephone2Name: Rain Kärgenberg
+  telephoneName: Valmar Lutsar
   text: Emadekasvatus OÜ Reg. 14646906
 ---
 Oleme saanud oma mesilasemade kasvatuse kogemuse Soomes Juha Nuutero juures mesindades. Samuti on sealt pärit emade algmaterjal – soomes aklimatiseerunud itaalia mesilane.
