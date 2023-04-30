@@ -34,8 +34,6 @@ Meie poolt kasvatatavad emad on vabalt paarunud. Need emad sobivad suurepärasel
 
 Paarla asub piirkonnas, kus on üle tuhande mesilaspere, mis suuremalt jaolt on pärit samast algmaterjalist.
 
-2020 Suvel tegime Kristjan-Jaak Nuudiga filmi mesilasemade kasvatusest.
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/QHZAQwubppc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+2020 Suvel tegime Kristjan-Jaak Nuudiga [filmi mesilasemade kasvatusest](https://www.youtube.com/watch?v=QHZAQwubppc).
 
 ![null](/img/whatsapp-image-2018-11-08-at-20.53.57.jpeg)
