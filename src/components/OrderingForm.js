@@ -1,7 +1,7 @@
 import React from "react";
 import { FaBuilding, FaEnvelope } from "react-icons/fa";
 
-export const OrderingForm = ({ active, notActiveDescription, heading, description }) =>{
+export const OrderingForm = ({ active, notActiveDescription, heading, description, disabledWeeks }) =>{
 	const today = new Date();
 	const year = today.getFullYear();
 
@@ -49,7 +49,18 @@ export const OrderingForm = ({ active, notActiveDescription, heading, descriptio
 		weekStart.setDate(weekStart.getDate() + 7)
 	}
 
+	function strToNumArr(str) {
+		if (!str) return [];
 
+		const numArr = str.replace(/\./g, ',')
+			.split(',')
+			.filter(Boolean)
+			.map(s => parseInt(s.trim(), 10));
+
+		return numArr.filter(val => !isNaN(val));
+	}
+
+	const disabledWeekNumbers = strToNumArr(disabledWeeks)
 
  return (
   <div className="content box" id="tellimine">
@@ -78,7 +89,8 @@ export const OrderingForm = ({ active, notActiveDescription, heading, descriptio
             <select name="kättesaamiseAeg" required defaultValue={""}>
               <option value="">-- Vali kättesaamise aeg --</option>
               {weeks.map((week, index) => (
-				  <option
+				  <option disabled={disabledWeekNumbers.includes(index + 1)}
+						  style={disabledWeekNumbers.includes(index + 1) ? {textDecoration: 'line-through'} : undefined}
 						  key={index} value={week.label}>
 					  {week.label}
 				  </option>
