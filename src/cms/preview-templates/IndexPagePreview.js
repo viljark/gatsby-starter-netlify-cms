@@ -9,7 +9,8 @@ const IndexPagePreview = ({ entry, widgetFor }) => (
     picture1={entry.getIn(["data", "picture1"])}
     isFormActive={entry.getIn(["data", "isFormActive"])}
     notActiveDescription={entry.getIn(["data", "notActiveDescription"])}
-    formDescription={entry.getIn(["data", "formDescription"])}
+	disabledWeeks={entry.getIn(["data", "disabledWeeks"])}
+	formDescription={entry.getIn(["data", "formDescription"])}
     formTitle={entry.getIn(["data", "formTitle"])}
     footer={{
       text: entry.getIn(["data", "footer", "text"]),

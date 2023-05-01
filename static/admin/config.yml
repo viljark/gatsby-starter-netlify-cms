@@ -21,6 +21,7 @@ collections:
         - {label: "Tellimisvormi kirjeldus", name: "formDescription", widget: "string"}
         - {label: "Kas vorm on aktiivne?", name: "isFormActive", widget: "boolean"}
         - {label: "Mitteaktiivse vormi asemel tekst", name: "notActiveDescription", widget: "string"}
+        - {label: "Täis broneeritud nädalate numbrid (näide: 2,4,11)", name: "disabledWeeks", widget: "string"}
         - {label: "Avalehe pilt 1", name: "picture1", widget: image}
         - {label: "Lehe sisu", name: "body", widget: "markdown"}
         - {label: Jalus, name: footer, widget: object, fields: [{label: "Jaluse tekst", name: "text", widget: "string"}, {label: "Telefoni nr", name: "telephone", widget: "string"}, {label: "Telefoni nr omanik", name: "telephoneName", widget: "string"}, {label: "Telefoni nr 2", name: "telephone2", widget: "string"}, {label: "Telefoni nr 2 omanik", name: "telephone2Name", widget: "string"}, {label: "E-mail", name: "email", widget: "string"}, {label: "Aadress", name: "address", widget: "string"}]}

@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 export class IndexPageTemplate extends React.Component {
   render() {
-    const { heroImage, hero, picture1, html, isFormActive, notActiveDescription, formDescription, formTitle, contentComponent, footer } = this.props;
+    const { heroImage, hero, picture1, html, isFormActive, notActiveDescription, formDescription, formTitle, contentComponent, footer, disabledWeeks } = this.props;
     const PageContent = contentComponent || Content;
     return (
       <>
@@ -35,6 +35,7 @@ export class IndexPageTemplate extends React.Component {
                 notActiveDescription={notActiveDescription}
                 description={formDescription}
                 heading={formTitle}
+				disabledWeeks={disabledWeeks}
               />
             </div>
           </div>
@@ -85,6 +86,7 @@ export const pageQuery = graphql`
         formDescription
         isFormActive
         notActiveDescription
+	    disabledWeeks
       }
     }
     allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/pages\\/index/"}}) {
