@@ -90,9 +90,8 @@ export const OrderingForm = ({ active, notActiveDescription, heading, descriptio
               <option value="">-- Vali kättesaamise aeg --</option>
               {weeks.map((week, index) => (
 				  <option disabled={disabledWeekNumbers.includes(index + 1)}
-						  style={disabledWeekNumbers.includes(index + 1) ? {textDecoration: 'line-through'} : undefined}
 						  key={index} value={week.label}>
-					  {week.label}
+					  {week.label} {disabledWeekNumbers.includes(index + 1) ? '(broneeritud)' : ''}
 				  </option>
               ))}
             </select>
