@@ -6,6 +6,7 @@ import { OrderingForm } from "../components/OrderingForm";
 import CMSImage from "../components/CMSImage";
 import Content from "../components/Content";
 import Footer from "../components/Footer";
+import Helmet from "react-helmet";
 
 export class IndexPageTemplate extends React.Component {
   render() {
@@ -13,6 +14,9 @@ export class IndexPageTemplate extends React.Component {
     const PageContent = contentComponent || Content;
     return (
       <>
+		  <Helmet>
+			  <link rel="canonical" href={`https://mesilasemad.ee`}/>
+		  </Helmet>
         <section className="hero is-medium is-bold">
           <CMSImage className="hero-image" imageInfo={heroImage}/>
           <div className="hero-body">

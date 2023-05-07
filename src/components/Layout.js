@@ -3,18 +3,19 @@ import Helmet from "react-helmet";
 
 import Navbar from "../components/Navbar";
 import favicon from "../img/favicon.ico";
+import image from "../img/mesilasema.jpeg";
 import "./all.scss";
 
 typeof window !== 'undefined' && require("picturefill") && require("picturefill/dist/plugins/mutation/pf.mutation");
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, location }) => (
   <div>
     <Helmet>
-      <title>Mesilasemade kasvatus ja müük</title>
+      <title>Mesilasemade kasvatus ja müük - Emadekasvatus OÜ</title>
       <link rel="shortcut icon" type="image/png" href={`${favicon}`}/>
-      <meta name="description" content="Mesilasemade kasvatus ja müük"/>
+      <meta name="description" content="Mesilasemade kasvatus ja müük - Emadekasvatus OÜ"/>
       <meta name="google-site-verification" content="DD9F-Odf_EZ2jaCNc3GnjlLW8dhzwz6cUTKgw6wikgA" />
-      {/*<meta name="image" content={image} />*/}
+      <meta name="image" content={image} />
 
       {/* OpenGraph tags */}
       <meta property="og:url" content="https://mesilasemad.ee"/>
