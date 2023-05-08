@@ -13,7 +13,7 @@ class Footer extends Component {
         : <StaticQuery
           query={graphql`
           query FooterQuery {
-            allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/pages\\/index/"}}) {
+            allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/pages\/index/"}}) {
               edges {
                 node {
                   fileAbsolutePath

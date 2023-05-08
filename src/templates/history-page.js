@@ -107,9 +107,9 @@ const HistoryPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   return (
     <Layout>
-		<Helmet>
-			<link rel="canonical" href={`https://mesilasemad.ee/ajalugu/`}/>
-		</Helmet>
+		{/*<Helmet>*/}
+		{/*	<link rel="canonical" href={`https://mesilasemad.ee/ajalugu/`}/>*/}
+		{/*</Helmet>*/}
       <HistoryPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}

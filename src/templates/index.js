@@ -14,9 +14,9 @@ export class IndexPageTemplate extends React.Component {
     const PageContent = contentComponent || Content;
     return (
       <>
-		  <Helmet>
-			  <link rel="canonical" href={`https://mesilasemad.ee`}/>
-		  </Helmet>
+		  {/*<Helmet>*/}
+			{/*  <link rel="canonical" href={`https://mesilasemad.ee`}/>*/}
+		  {/*</Helmet>*/}
         <section className="hero is-medium is-bold">
           <CMSImage className="hero-image" imageInfo={heroImage}/>
           <div className="hero-body">
@@ -93,7 +93,7 @@ export const pageQuery = graphql`
 	    disabledWeeks
       }
     }
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/pages\\/index/"}}) {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/pages\/index/"}}) {
       edges {
         node {
           fileAbsolutePath

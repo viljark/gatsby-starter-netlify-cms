@@ -22,7 +22,9 @@ const TemplateWrapper = ({ children }) => (
       <meta property="og:title" content="Mesilasemade kasvatus ja müük"/>
       <meta property="og:description" content="Mesilasemade kasvatus ja müük"/>
     </Helmet>
-	  <div className="moving">Veebileht kolib, meie uus aadress on <a href="https://mesilasemad.ee" target="_blank">mesilasemad.ee</a>
+	  <div className="moving">Veebileht kolib, meie uus aadress on <a href="https://mesilasemad.ee" rel="noreferrer" target="_blank">mesilasemad.ee</a>
+		  
+
 	  </div>
     <Navbar/>
 

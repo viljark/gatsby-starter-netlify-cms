@@ -8,9 +8,9 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-		  <Helmet>
-			  <link rel="canonical" href={`https://mesilasemad.ee/submitForm/`}/>
-		  </Helmet>
+		  {/*<Helmet>*/}
+			{/*  <link rel="canonical" href={`https://mesilasemad.ee/submitForm/`}/>*/}
+		  {/*</Helmet>*/}
         <section className="section section--gradient">
           <div className="container">
             <div className="columns">
