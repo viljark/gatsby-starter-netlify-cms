@@ -35,10 +35,10 @@ Meie poolt kasvatatavad emad on vabalt paarunud. Need emad sobivad suurepärasel
 
 Paarla asub piirkonnas, kus on üle tuhande mesilaspere, mis suuremalt jaolt on pärit samast algmaterjalist.
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D710852353388353%26extid%3DNS-UNK-UNK-UNK-AN_GK0T-GK1C%26mibextid%3D2Rb1fB%26ref%3Dsharing&width=500&show_text=false&height=282" width="500" height="282" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D710852353388353%26extid%3DNS-UNK-UNK-UNK-AN_GK0T-GK1C%26mibextid%3D2Rb1fB%26ref%3Dsharing&show_text=false" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
 ---
 
 2020 Suvel tegime Kristjan-Jaak Nuudiga filmi mesilasemade kasvatusest.
 
-<iframe width="500" height="282" src="https://www.youtube.com/embed/QHZAQwubppc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/QHZAQwubppc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
