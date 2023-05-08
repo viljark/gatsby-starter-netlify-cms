@@ -4,7 +4,7 @@ backend:
   branch: master
 media_folder: static/img
 public_folder: /img
-display_url: https://mesilasemad.ee
+display_url: https://emadekasvatus.ee
 
 collections:
   - name: "pages"

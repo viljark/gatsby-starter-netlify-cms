@@ -114,3 +114,20 @@ html, body {
 .mitte-inimestele {
   display: none;
 }
+iframe {
+  max-width: 100%;
+}
+.moving {
+  text-align: center;
+  background: #fd9119;
+  color: #fff;
+  padding: 5px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  > a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}

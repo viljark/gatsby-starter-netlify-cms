@@ -16,7 +16,7 @@ class Navbar extends Component {
         <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item" href="../">
-              <h1>Mesilasemad.ee</h1>
+              <h1>Emadekasvatus.ee</h1>
             </a>
             <span className={`navbar-burger burger ${this.state.open ? "is-active" : ""}`}
                   data-target="navbarMenu"

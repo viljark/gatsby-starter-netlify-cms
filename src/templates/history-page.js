@@ -6,6 +6,7 @@ import Testimonials from "../components/Testimonials";
 import Columns from "../components/Columns";
 import CMSImage from "../components/CMSImage";
 import Footer from "../components/Footer";
+import Helmet from "react-helmet";
 
 export const HistoryPageTemplate = ({
                                       image,
@@ -106,6 +107,9 @@ const HistoryPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   return (
     <Layout>
+		<Helmet>
+			<link rel="canonical" href={`https://mesilasemad.ee/ajalugu/`}/>
+		</Helmet>
       <HistoryPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}

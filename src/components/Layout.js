@@ -18,11 +18,14 @@ const TemplateWrapper = ({ children, location }) => (
       <meta name="image" content={image} />
 
       {/* OpenGraph tags */}
-      <meta property="og:url" content="https://mesilasemad.ee"/>
+      <meta property="og:url" content="https://emadekasvatus.ee"/>
       <meta property="og:title" content="Mesilasemade kasvatus ja müük"/>
       <meta property="og:description" content="Mesilasemade kasvatus ja müük"/>
     </Helmet>
+	  <div className="moving">Veebileht kolib, meie uus aadress on <a href="https://mesilasemad.ee" target="_blank">mesilasemad.ee</a>
+	  </div>
     <Navbar/>
+
     <div>{children}</div>
   </div>
 );

@@ -7,7 +7,7 @@ import Gallery from "react-photo-gallery";
 import Lightbox from "react-images";
 import Footer from "../components/Footer";
 import Videos from "../components/Videos";
-
+import Helmet from "react-helmet";
 
 const Image = ({ photo, index, onClick }) => {
   return (
@@ -89,6 +89,9 @@ const GalleryPage = ({ data }) => {
   const fluidImgs = data.allFile.edges.filter(e => e.node.childImageSharp).map(e => e.node.childImageSharp.fluid);
   return (
     <Layout>
+		<Helmet>
+			<link rel="canonical" href={`https://mesilasemad.ee/galerii/`}/>
+		</Helmet>
       <GalleryPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
