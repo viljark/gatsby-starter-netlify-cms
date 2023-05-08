@@ -8,7 +8,7 @@ import "./all.scss";
 
 typeof window !== 'undefined' && require("picturefill") && require("picturefill/dist/plugins/mutation/pf.mutation");
 
-const TemplateWrapper = ({ children, location }) => (
+const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet>
       <title>Mesilasemade kasvatus ja müük - Emadekasvatus OÜ</title>
