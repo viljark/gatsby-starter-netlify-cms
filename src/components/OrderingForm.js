@@ -7,17 +7,17 @@ export const OrderingForm = ({active, notActiveDescription, heading, description
 
 // Find the start of the first week to show (either today or June 1)
 	let firstWeekStart
-	if (today >= new Date(year, 5, 1)) {
-		firstWeekStart = new Date(today.getTime())
-		while (firstWeekStart.getDay() !== 1) {
-			firstWeekStart.setDate(firstWeekStart.getDate() + 1)
-		}
-	} else {
-		firstWeekStart = new Date(year, 5, 1)
-		while (firstWeekStart.getDay() !== 1) {
-			firstWeekStart.setDate(firstWeekStart.getDate() - 1)
-		}
+	// if (today >= new Date(year, 5, 1)) {
+	// 	firstWeekStart = new Date(today.getTime())
+	// 	while (firstWeekStart.getDay() !== 1) {
+	// 		firstWeekStart.setDate(firstWeekStart.getDate() + 1)
+	// 	}
+	// } else {
+	firstWeekStart = new Date(year, 5, 1)
+	while (firstWeekStart.getDay() !== 1) {
+		firstWeekStart.setDate(firstWeekStart.getDate() - 1)
 	}
+	// }
 
 // Find the end of the last week to show (August 31)
 	const lastWeekEnd = new Date(year, 7, 31)
