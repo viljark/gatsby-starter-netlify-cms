@@ -6,15 +6,15 @@ formTitle: Tellimiseks palun täida järgnev vorm
 formDescription: >-
   Mesilasema hind: 1-5 tk - a 30 eur. 6 - 12 tk. 28 eur. Suuremate tellimuste
   korral hinnad kokkuleppel
-isFormActive: false
+isFormActive: true
 notActiveDescription: Hetkel on tellimine suletud.
 disabledWeeks: '0'
 picture1: /img/DSC_0129.jpg
 footer:
   address: 'Kastani 9, Vaabina, Võrumaa, 66519'
   email: emadekasvatus@gmail.com
-  telephone: +372 56684526
-  telephone2: +372 55903823
+  telephone: +372 5668 4526
+  telephone2: +372 5590 3823
   telephone2Name: Rain Kärgenberg
   telephoneName: Valmar Lutsar
   text: Emadekasvatus OÜ Reg. 14646906
