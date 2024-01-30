@@ -8,13 +8,13 @@ main:
   heading: ''
   description: ''
   image1:
-    alt: ''
+    alt: Mesilased kärjel. Honeybees on honeycomb..
     image: /img/DSC_0180.jpg
   image2:
-    alt: ''
+    alt: Mesilasema kupud kupuraamil. Qeenbee combs on a frame.
     image: /img/DSC_0879.jpg
   image3:
-    alt: ''
+    alt: Vageldamine emadekasvatuses. Queenbee growing
     image: /img/DSC_0129.jpg
 testimonials: []
 full_image: /img/mesilane.jpeg
