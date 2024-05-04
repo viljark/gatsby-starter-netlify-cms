@@ -12,7 +12,7 @@ disabledWeeks: '1,2'
 picture1: /img/DSC_0129.jpg
 footer:
   address: 'Kastani 9, Vaabina, Võrumaa, 66519'
-  email: emadekasvatus@gmail.com
+  email: info@mesilasemad.ee
   telephone: +372 5668 4526
   telephone2: +372 5590 3823
   telephone2Name: Rain Kärgenberg
