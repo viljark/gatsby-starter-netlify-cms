@@ -6,7 +6,7 @@ formTitle: Tellimiseks palun täida järgnev vorm
 formDescription: >-
   Mesilasema hind: 1-5 tk - a 30 eur. 6 - 12 tk. 28 eur. Suuremate tellimuste
   korral hinnad kokkuleppel. Lisandub saatmiskulud.
-isFormActive: true
+isFormActive: false
 notActiveDescription: Hetkel on tellimine suletud.
 disabledWeeks: '1,2,3,4,5,6,7,8,9,10,11,12,13'
 picture1: /img/DSC_0129.jpg
