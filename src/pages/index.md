@@ -8,7 +8,7 @@ formDescription: >-
   korral hinnad kokkuleppel. Lisandub saatmiskulud.
 isFormActive: true
 notActiveDescription: Hetkel on tellimine suletud.
-disabledWeeks: 0;
+disabledWeeks: '0;1 '
 picture1: /img/DSC_0129.jpg
 footer:
   address: 'Kastani 9, Vaabina, Võrumaa, 66519'
