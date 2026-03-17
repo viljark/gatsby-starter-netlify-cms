@@ -4,8 +4,8 @@ hero: Mesilasemade kasvatus ja müük
 heroImage: /img/hero.jpeg
 formTitle: Tellimiseks palun täida järgnev vorm
 formDescription: >-
-  Mesilasema hind: 1-5 tk - a 32 eur. 6 - 10 tk. 30 eur. Suuremate tellimuste
-  korral hinnad kokkuleppel. Lisandub saatmiskulud.
+  Mesilasema hind: 1-3 tk - a 35 eur. 4 - 6  tk. 32  eur. 7 - 10 tk. 30 eur.
+  Suuremate tellimuste korral hinnad kokkuleppel. Lisandub saatmiskulud.
 isFormActive: true
 notActiveDescription: Hetkel on tellimine suletud.
 disabledWeeks: '0,1,2,5'
